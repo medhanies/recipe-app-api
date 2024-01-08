@@ -7,7 +7,6 @@ from django.urls import reverse
 from django.test import Client
 
 
-
 class AdminSiteTests(TestCase):
     """Tests for Django admin"""
 
@@ -46,4 +45,3 @@ class AdminSiteTests(TestCase):
         res = self.client.get(url)
 
         self.assertEqual(res.status_code, 200)
-
